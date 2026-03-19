@@ -1,9 +1,0 @@
-# week04-4c.py (重寫 week04-4b.py)
-# LeetCode 3866. First Unique Even Element
-# 找到陣列 nums 裡「只出現過1次的偶數」第1次出現
-class Solution:
-    def firstUniqueEven(self, nums: list[int]) -> int:
-        H = Counter(nums)
-        for nn in nums:
-            if nn % 2 == 0 and H[nn] == 1: return nn
-        return -1
